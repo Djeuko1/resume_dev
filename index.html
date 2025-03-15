@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Developer Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <a href="/" class="logo">
+        <i class="fa-solid fa-terminal"></i>
+        <span>Dev.Portfolio</span>
+      </a>
+      <nav>
+        <a href="#about">> about</a>
+        <a href="#skills">> skills</a>
+        <a href="#projects">> projects</a>
+        <a href="#contact">> contact</a>
+      </nav>
+      <button class="btn btn-outline" id="resume-btn">Resume</button>
+      <div class="mobile-menu-btn">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <!-- Hero Section -->
+      <section class="hero">
+        <div class="tag">Hello World!</div>
+        <h1>
+          <span>I'm, Maks Koriazhnov</span>
+          <span class="text-white">Frontend Developer</span>
+        </h1>
+        <p class="code-block">
+          <span class="keyword">const</span> <span class="variable">developer</span> = {
+          <br>
+          &nbsp;&nbsp;<span class="property">skills</span>: [<span class="string">"React"</span>, <span class="string">"TypeScript"</span>, <span class="string">"Next.js"</span>],
+          <br>
+          &nbsp;&nbsp;<span class="property">passion</span>: <span class="string">"Building beautiful web experiences"</span>
+          <br>
+          };
+        </p>
+        <div class="btn-group">
+          <button class="btn btn-primary" id="view-btn">View Projects</button>
+          <button class="btn btn-outline" id="contact-btn">Contact Me</button>
+        </div>
+        <div class="hero-animation">
+          <div class="code-line"></div>
+          <div class="code-line"></div>
+          <div class="code-line"></div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section id="about" class="about">
+        <div class="grid">
+          <div class="about-content">
+            <h2>
+              <span class="tag-open">&lt;</span>
+              About Me
+              <span class="tag-close">/&gt;</span>
+            </h2>
+            <div class="comment-block">
+              <p><span class="comment">/**</span></p>
+              <p>
+                <span class="comment">*</span> I'm a passionate frontend developer with 3 years of experience
+                <span class="comment">*</span> building modern web applications. I specialize in React,
+                <span class="comment">*</span> TypeScript, and Next.js.
+              </p>
+              <p>
+                <span class="comment">*</span> When I'm not coding, you can find me hiking,
+                <span class="comment">*</span> reading tech blogs, or contributing to open source.
+              </p>
+              <p><span class="comment">*/</span></p>
+            </div>
+          </div>
+          <div class="terminal-section">
+            <div class="terminal-header">
+              <div class="terminal-button red"></div>
+              <div class="terminal-button yellow"></div>
+              <div class="terminal-button green"></div>
+              <div class="terminal-title">developer@portfolio:~</div>
+            </div>
+            <div class="terminal-body">
+              <div class="terminal-loader">
+                <i class="fa-solid fa-spinner fa-spin"></i>
+                Loading profile data...
+              </div>
+              <pre class="terminal-text"></pre>
+              <span class="terminal-cursor"></span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills Section -->
+      <section id="skills" class="skills">
+        <h2>
+          <span class="tag-open">&lt;</span>
+          Skills
+          <span class="tag-close">/&gt;</span>
+        </h2>
+        <div class="skills-grid">
+          <div class="skill-card">
+            <h3><span class="keyword">class</span> <span class="class-name">Frontend</span> {</h3>
+            <div class="skill-list">
+              <div class="skill-item">
+                <div class="skill-dot"></div>
+                <code><span class="property">skill_1</span>: <span class="string">"React"</span></code>
+              </div>
+              <div class="skill-item">
+                <div class="skill-dot"></div>
+                <code><span class="property">skill_2</span>: <span class="string">"Next.js"</span></code>
+              </div>
+              <div class="skill-item">
+                <div class="skill-dot"></div>
+                <code><span class="property">skill_3</span>: <span class="string">"TypeScript"</span></code>
+              </div>
+              <div class="skill-item">
+                <div class="skill-dot"></div>
+                <code><span class="property">skill_4</span>: <span class="string">"HTML5/CSS3"</span></code>
+              </div>
+              <div class="skill-item">
+                <div class="skill-dot"></div>
+                <code><span class="property">skill_5</span>: <span class="string">"Tailwind CSS"</span></code>
+              </div>
+            </div>
+            <div>};</div>
+          </div>
+          <div class="skill-card">
+            <h3><span class="keyword">class</span> <span class="class-name">State Management</span> {</h3>
+            <div class="skill-list">
+              <div class="skill-item">
+                <div class="skill-dot"></div>
+                <code><span class="property">skill_1</span>: <span class="string">"Redux"</span></code>
+              </div>
+              <div class="skill-item">
+                <div class="skill-dot"></div>
+                <code><span class="property">skill_2</span>: <span class="string">"Context API"</span></code>
+              </div>
+              <div class="skill-item">
+                <div class="skill-dot"></div>
+                <code><span class="property">skill_3</span>: <span class="string">"Zustand"</span></code>
+              </div>
+              <div class="skill-item">
+                <div class="skill-dot"></div>
+                <code><span class="property">skill_4</span>: <span class="string">"Recoil"</span></code>
+              </div>
+            </div>
+            <div>};</div>
+          </div>
+          <div class="skill-card">
+            <h3><span class="keyword">class</span> <span class="class-name">Backend</span> {</h3>
+            <div class="skill-list">
+              <div class="skill-item">
+                <div class="skill-dot"></div>
+                <code><span class="property">skill_1</span>: <span class="string">"In processes..."</span></code>
+              </div>
+             
+               
+            </div>
+            <div>};</div>
+          </div>
+          <div class="skill-card">
+            <h3><span class="keyword">class</span> <span class="class-name">Tools</span> {</h3>
+            <div class="skill-list">
+              <div class="skill-item">
+                <div class="skill-dot"></div>
+                <code><span class="property">skill_1</span>: <span class="string">"Git"</span></code>
+              </div>
+              <div class="skill-item">
+                <div class="skill-dot"></div>
+                <code><span class="property">skill_2</span>: <span class="string">"GitHub"</span></code>
+              </div>
+              <div class="skill-item">
+                <div class="skill-dot"></div>
+                <code><span class="property">skill_3</span>: <span class="string">"VS Code"</span></code>
+              </div>
+              <div class="skill-item">
+                <div class="skill-dot"></div>
+                <code><span class="property">skill_4</span>: <span class="string">"Figma"</span></code>
+              </div>
+              
+            </div>
+            <div>};</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section id="projects" class="projects">
+        <h2>
+          <span class="tag-open">&lt;</span>
+          Projects
+          <span class="tag-close">/&gt;</span>
+        </h2>
+        <div class="projects-grid">
+          <div class="project-card">
+            <div class="project-image">
+              <img src="https://placehold.co/400x200" alt="E-commerce Platform">
+            </div>
+            <div class="project-content">
+              <h3>E-commerce Platform</h3>
+              <p>A full-featured online store built with Next.js and Stripe</p>
+              <div class="project-tags">
+                <span>Next.js</span>
+                <span>TypeScript</span>
+                <span>Stripe</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="btn btn-sm">
+                  <i class="fa-brands fa-github"></i> Code
+                </a>
+                <a href="#" class="btn btn-sm">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i> Demo
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-image">
+              <img src="https://placehold.co/400x200" alt="Task Management App">
+            </div>
+            <div class="project-content">
+              <h3>Task Management App</h3>
+              <p>A drag-and-drop task manager with real-time updates</p>
+              <div class="project-tags">
+                <span>React</span>
+                <span>Firebase</span>
+                <span>Tailwind</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="btn btn-sm">
+                  <i class="fa-brands fa-github"></i> Code
+                </a>
+                <a href="#" class="btn btn-sm">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i> Demo
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-image">
+              <img src="https://placehold.co/400x200" alt="Portfolio Website">
+            </div>
+            <div class="project-content">
+              <h3>Portfolio Website</h3>
+              <p>A developer portfolio with a terminal-like interface</p>
+              <div class="project-tags">
+                <span>Next.js</span>
+                <span>Tailwind</span>
+                <span>Framer Motion</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="btn btn-sm">
+                  <i class="fa-brands fa-github"></i> Code
+                </a>
+                <a href="#" class="btn btn-sm">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i> Demo
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="contact">
+        <h2>
+          <span class="tag-open">&lt;</span>
+          Contact
+          <span class="tag-close">/&gt;</span>
+        </h2>
+        <div class="contact-container">
+          <form id="contact-form" class="contact-form">
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="name">
+                  <span class="keyword">const</span> <span class="variable">name</span> =
+                </label>
+                <input type="text" id="name" placeholder='"Your Name"' required>
+              </div>
+              <div class="form-group">
+                <label for="email">
+                  <span class="keyword">const</span> <span class="variable">email</span> =
+                </label>
+                <input type="email" id="email" placeholder='"your@email.com"' required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="subject">
+                <span class="keyword">const</span> <span class="variable">subject</span> =
+              </label>
+              <input type="text" id="subject" placeholder='"Project Inquiry"' required>
+            </div>
+            <div class="form-group">
+              <label for="message">
+                <span class="keyword">const</span> <span class="variable">message</span> =
+              </label>
+              <textarea id="message" placeholder='"Hello, I would like to discuss a project..."' rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">
+              <span class="btn-text">Send Message</span>
+              <span class="btn-loading hidden">
+                <i class="fa-solid fa-spinner fa-spin"></i> Sending...
+              </span>
+            </button>
+            <div class="form-note">
+              <span class="comment">// </span>
+              I'll respond to your message as soon as possible
+            </div>
+          </form>
+          <div class="contact-success hidden">
+            <i class="fa-solid fa-circle-check"></i>
+            <h3>Message Sent!</h3>
+            <p>Thanks for reaching out. I'll get back to you soon.</p>
+            <button id="send-another" class="btn btn-primary">Send Another Message</button>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-copyright">
+        <p>
+          <span class="keyword">const</span> <span class="variable">copyright</span> = <span class="string">"© 2025 Maks Koriazhnov"</span>;
+        </p>
+      </div>
+      <div class="footer-links">
+        <a href="https://github.com">GitHub</a>
+        <a href="https://linkedin.com">LinkedIn</a>
+        <a href="https://twitter.com">Twitter</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
